@@ -1,0 +1,22 @@
+numbers = [1, 2, 3, 4]
+isTrue = True
+max = numbers[0]
+for index in range(1, len(numbers)):
+    if max < numbers[index]:
+        max = numbers[index]
+
+for index2 in range(1, len(numbers)):
+    fNum = numbers[0]
+    sNum = numbers[index2]
+
+    if fNum == sNum:
+        isTrue = False
+
+if max == numbers[len(numbers) -1] and numbers[0] != numbers[1] and isTrue == True:
+    print('increasing')
+elif isTrue == False:
+    print('neither')
+elif max == numbers[0] and isTrue == True:
+    print('decreasing')
+else:
+    print('neither')
